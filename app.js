@@ -3,11 +3,7 @@ var app = express();
 var methodOverride = require("method-override");
 var bodyParser = require("body-parser");
 var mongoose = require("mongoose");
-var multer = require("multer");
-var upload = multer({dest:'./public/uploads/',rename: function (fieldname, filename) {
-   return filename;
- }});
-var fs = require("fs");
+
 
 //APP-Config
 mongoose.connect("mongodb://localhost:27017/restful_blogv2", { useNewUrlParser: true });
