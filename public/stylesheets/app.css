@@ -1,0 +1,24 @@
+i.icon{
+    font-size: 2em;
+}
+.ui.text.container{
+    margin-top: 7.0em;
+}
+.ui.form textarea{
+    resize: none;
+}
+#title{
+    padding-left: 15px;
+    margin:12px 0;
+}
+.content{
+    margin:10px 0;
+    padding-left: 13px;
+}
+.description{
+    margin: 10px 0;
+    padding-left: 13px;
+}
+.ui.basic.blue.button.inbut{
+    margin-left: 13px;
+}

@@ -1,0 +1,24 @@
+<% include partials/header.ejs %>
+<div class="ui main text container segment">
+    <div class="ui huge header">
+        <%= idata.title %>
+    </div>
+    <div class="ui top attached">
+        <div class="item">
+        <img class="ui centered rounded image" src="<%= idata.image %>" />
+        <div class="content">
+            <span><%= idata.created.toDateString()%></span>
+        </div>
+        <div class="description">
+            <p><%- idata.body %></p>
+        </div>
+        </div>
+        <form action="/blogs/<%= idata._id%>?_method=DELETE" method="POST">
+        <a class="ui large violet basic button" href="/blogs/<%= idata._id%>/edit">Edit</a>
+        <button class="ui large red basic button">Delete</button>
+        </form>
+    </div>
+    
+    
+</div>
+<% include partials/footer.ejs %>
